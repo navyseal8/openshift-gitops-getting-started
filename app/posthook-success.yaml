@@ -5,6 +5,13 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PostSync
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
+  labels:
+    app: spring-petclinic
+    app.kubernetes.io/component: web
+    app.kubernetes.io/instance: spring-petclinic
+    app.kubernetes.io/name: spring-petclinic
+    app.kubernetes.io/part-of: spring-petclinic
+    app.openshift.io/runtime: java
 spec:
   template:
     spec:
